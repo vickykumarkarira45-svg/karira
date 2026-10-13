@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiHut - Authentic Pakistani Street Flavors & Traditional Cuisine</title>
+    <!-- Meta tags for SEO & Sharing -->
+    <meta name="description" content="Welcome to DesiHut Hyderabad. Taste authentic Dahi Bhallay, Special Chaat, Crispy Samosay, Chicking Special, Dum Biryani in Latifabad Unit #3, Hyderabad.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <header class="top-ticker">
+        <div class="container">
+            <div class="ticker-left">
+                <span class="ticker-item"><i class="fa-solid fa-location-dot"></i> Banglow No A/2, Auto Bahn Rd, Latifabad Unit # 3, Hyderabad, Pakistan</span>
+                <span class="ticker-item"><i class="fa-solid fa-clock"></i> 12:00 PM - 01:00 AM Daily</span>
+            </div>
+            <div class="ticker-right">
+                <span class="ticker-item"><i class="fa-solid fa-phone"></i> Order Call: <a href="tel:03143666277">03143666277</a></span>
+                <a href="admin.html" class="ticker-item" style="color: #f59e0b; font-weight:600;"><i class="fa-solid fa-lock"></i> Admin Portal</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Desi<span>Hut</span></h1>
+                    <p>Authentic Street Delicacies</p>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#specials">Signature Portfolio</a></li>
+                <li><a href="#menu">Full Menu</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Location & Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn-cart" id="openCartBtn" aria-label="View Shopping Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cartCountBadge">0</span>
+                </button>
+
+                <a href="tel:03143666277" class="btn-call">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>03143666277</span>
+                </a>
+
+                <a href="admin.html" class="btn-admin-link" title="Open Admin Panel">
+                    <i class="fa-solid fa-sliders"></i> Admin
+                </a>
+
+                <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i class="fa-solid fa-fire"></i> Authentic Pakistani Street Food
+                </div>
+                <h1 class="hero-title">
+                    The True Soul of <span>Desi Flavors</span> in Hyderabad
+                </h1>
+                <p class="hero-desc">
+                    Indulge in freshly prepared mouthwatering Dahi Bhalla, tangy Papdi Chaat, golden crispy Samosay, our signature roasted Chicking Special, and royal Sindh Dum Biryani. Fresh, spiced to perfection, and served with love.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary">
+                        <i class="fa-solid fa-utensils"></i> Explore Menu & Prices
+                    </a>
+                    <a href="https://wa.me/923143666277?text=Hi%20DesiHut!%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn-secondary">
+                        <i class="fa-brands fa-whatsapp" style="color:#25d366; font-size:1.2rem;"></i> WhatsApp Order
+                    </a>
+                </div>
+
+                <div class="hero-badges-row">
+                    <div class="hero-badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                        <div class="badge-text">
+                            <strong>100% Desi Taste</strong>
+                            <span>Traditional Spices</span>
+                        </div>
+                    </div>
+                    <div class="hero-badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                        <div class="badge-text">
+                            <strong>Fast Delivery</strong>
+                            <span>Across Latifabad</span>
+                        </div>
+                    </div>
+                    <div class="hero-badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <div class="badge-text">
+                            <strong>Prices in PKR</strong>
+                            <span>Pure Value</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Showcase Visual -->
+            <div class="hero-visual">
+                <div class="hero-main-card">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80" alt="DesiHut Signature Biryani & Karahi" id="heroFeaturedImage">
+                    <div class="hero-card-overlay">
+                        <h3>DesiHut Culinary Portfolio</h3>
+                        <p>Crafted fresh daily at Auto Bahn Road, Hyderabad</p>
+                    </div>
+                </div>
+
+                <!-- Floating interactive mini cards -->
+                <div class="floating-dish-pill pill-1">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <strong>Dahi Bhalla Special</strong>
+                        <span>Rs. 280 PKR</span>
+                    </div>
+                </div>
+
+                <div class="floating-dish-pill pill-2">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                    <div>
+                        <strong>Chicking Special</strong>
+                        <span>Rs. 790 PKR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Strip: Phone & Location Highlight -->
+    <div class="container">
+        <section class="quick-info-strip">
+            <div class="container info-strip-grid">
+                <div class="strip-item">
+                    <div class="strip-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>Banglow No A/2, Auto Bahn Rd, Latifabad Unit # 3, Hyderabad, Pakistan</p>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <div class="strip-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div>
+                        <h4>Call & Order Hotline</h4>
+                        <p><a href="tel:03143666277">03143666277</a> (Direct Deliveries)</p>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <div class="strip-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div>
+                        <h4>WhatsApp Orders</h4>
+                        <p><a href="https://wa.me/923143666277?text=Assalam%20o%20Alaikum%20DesiHut,%20I%20want%20to%20order" target="_blank">+92 314 3666277</a> (Fast response)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Portfolio / Signature Items Showcase -->
+    <section class="section" id="specials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Iconic Specialities</span>
+                <h2 class="section-title">The DesiHut Star Portfolio</h2>
+                <p class="section-desc">Hand-crafted street food delicacies prepared with authentic heritage spices, traditional chutneys, and premium ingredients.</p>
+            </div>
+
+            <!-- Featured items rendered dynamically -->
+            <div class="portfolio-grid" id="featuredGrid">
+                <!-- Javascript will populate featured items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section with Categories & PKR Pricing -->
+    <section class="section" id="menu" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Food & Beverage Catalog</span>
+                <h2 class="section-title">Explore Our Full Menu</h2>
+                <p class="section-desc">Select any item to customize your feast. All prices are listed in Pakistani Rupees (PKR).</p>
+            </div>
+
+            <!-- Filter Tabs & Search -->
+            <div class="menu-controls">
+                <div class="menu-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="menuSearchInput" placeholder="Search for Dahi Bhalla, Samose, Biryani, Chaat...">
+                </div>
+
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="tab-btn active" data-category="all">All Dishes</button>
+                    <button class="tab-btn" data-category="chaat">Dahi Bhallay & Chaat</button>
+                    <button class="tab-btn" data-category="samosay">Crispy Samosay</button>
+                    <button class="tab-btn" data-category="chicken">Chicking Specials</button>
+                    <button class="tab-btn" data-category="biryani">Special Biryani</button>
+                    <button class="tab-btn" data-category="desserts">Sweet Treats</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Menu Grid -->
+            <div class="portfolio-grid" id="menuGrid">
+                <!-- Menu items injected dynamically by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Heritage Section -->
+    <section class="section about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-images">
+                <div class="about-main-img">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80" alt="DesiHut Fresh Chaat Preparation">
+                </div>
+                <div class="about-experience-card">
+                    <div class="exp-number">100%</div>
+                    <div class="exp-label">Fresh & Authentic Desi Recipes</div>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <span class="section-subtitle">Our Heritage & Passion</span>
+                <h2 class="section-title">Bringing the Streets of Pakistan to Your Plate</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                    DesiHut was established with one mission: to capture the aromatic magic of Pakistani street bazaars and family dawat recipes. Situated in Latifabad Unit #3 on Auto Bahn Road, we bring together Hyderabad’s rich culinary culture with the finest chaats, biryanis, and succulent savories.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    From our slow-simmered Sindhi Dum Biryani and chilled sweet-savory Dahi Bhallay to our signature secret-marinated Chicking Special, each plate is made fresh to order with genuine desi ghee, roasted spices, and zesty home-churned chutneys.
+                </p>
+
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Fresh Local Ingredients</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Hygienic & Clean Kitchen</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Authentic Secret Spices</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Fast Delivery in Hyderabad</li>
+                </ul>
+
+                <a href="#menu" class="btn-primary">
+                    <i class="fa-solid fa-book-open"></i> Order Your Feast Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visit or Order</span>
+                <h2 class="section-title">Find Us in Hyderabad</h2>
+                <p class="section-desc">We welcome you to visit us in Latifabad or order directly to your doorstep.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem; color: var(--dark);">Get in Touch with DesiHut</h3>
+                    <p style="color: var(--text-muted);">Reach out directly for orders, family catering, or dining inquiries.</p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-content">
+                                <strong>Restaurant Location</strong>
+                                <p id="contactAddress">Banglow No A/2, Auto Bahn Rd, Latifabad Unit # 3 Latifabad Unit 3 Latifabad, Hyderabad, Pakistan</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-content">
+                                <strong>Direct Phone Hotline</strong>
+                                <p><a href="tel:03143666277" id="contactPhone">03143666277</a></p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-content">
+                                <strong>WhatsApp Support</strong>
+                                <p><a href="https://wa.me/923143666277" target="_blank">+92 314 3666277</a></p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="contact-content">
+                                <strong>Operating Hours</strong>
+                                <p id="contactTimings">Monday to Sunday: 12:00 PM – 01:00 AM</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                        <a href="tel:03143666277" class="btn-primary">
+                            <i class="fa-solid fa-phone"></i> Call 03143666277
+                        </a>
+                        <a href="https://wa.me/923143666277?text=Assalam%20o%20Alaikum,%20I%20want%20to%20order%20from%20DesiHut" target="_blank" class="btn-secondary">
+                            <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map Frame -->
+                <div class="map-card">
+                    <iframe 
+                        title="DesiHut Hyderabad Location Map"
+                        src="https://maps.google.com/maps?q=Auto%20Bahn%20Rd%20Latifabad%20Unit%203%20Hyderabad%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="brand" style="margin-bottom: 1rem;">
+                    <div class="brand-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <div class="brand-text">
+                        <h1 style="color:white;">Desi<span>Hut</span></h1>
+                        <p style="color:#94a3b8;">Authentic Street Delicacies</p>
+                    </div>
+                </div>
+                <p>
+                    Serving Hyderabad the most authentic Pakistani culinary delights. Specialized in Dahi Bhalla, Special Chaat, Samosay, Chicking Special, and rich Sindh Biryani.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/923143666277" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specials">Signature Portfolio</a></li>
+                    <li><a href="#menu">Complete Menu</a></li>
+                    <li><a href="#about">About DesiHut</a></li>
+                    <li><a href="#contact">Location & Hours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Our Specialties</h4>
+                <ul>
+                    <li><a href="#menu">Dahi Bhallay (Chilled Spiced)</a></li>
+                    <li><a href="#menu">Special Chaat</a></li>
+                    <li><a href="#menu">Crispy Golden Samosay</a></li>
+                    <li><a href="#menu">Chicking Special</a></li>
+                    <li><a href="#menu">Royal Sindh Dum Biryani</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Location & Orders</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot" style="color:var(--primary); margin-right:6px;"></i> Latifabad Unit #3, Auto Bahn Rd, Hyderabad</li>
+                    <li><i class="fa-solid fa-phone" style="color:var(--primary); margin-right:6px;"></i> <a href="tel:03143666277">03143666277</a></li>
+                    <li><i class="fa-brands fa-whatsapp" style="color:#25d366; margin-right:6px;"></i> <a href="https://wa.me/923143666277" target="_blank">+92 314 3666277</a></li>
+                    <li style="margin-top:0.75rem;">
+                        <a href="admin.html" style="display:inline-flex; align-items:center; gap:6px; color:#f59e0b; font-weight:600;">
+                            <i class="fa-solid fa-gear"></i> Admin Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 DesiHut Restaurant. All Rights Reserved. Currency: Pakistani Rupee (PKR / Rs.)</p>
+            <p>Designed for Desi Street Food Lovers &bull; Latifabad, Hyderabad</p>
+        </div>
+    </footer>
+
+    <!-- CART SLIDE-OVER DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-basket-shopping" style="color: var(--primary);"></i> Your Feast Order</h3>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div class="cart-body" id="cartItemsList">
+            <!-- Dynamic Cart Items rendered via JavaScript -->
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-summary-line">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+            <div class="cart-summary-line">
+                <span>Delivery (Latifabad Area)</span>
+                <span id="cartDelivery">Rs. 100</span>
+            </div>
+            <div class="cart-summary-line total">
+                <span>Grand Total</span>
+                <span class="total-amount" id="cartTotal">Rs. 0</span>
+            </div>
+
+            <button class="btn-checkout" id="checkoutBtn">
+                <i class="fa-brands fa-whatsapp"></i> Confirm & Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- ORDER / CHECKOUT MODAL -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-brands fa-whatsapp" style="color:#22c55e;"></i> Complete Your Order</h3>
+                <button class="modal-close-btn" id="closeOrderModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.25rem;">
+                        Please provide your details. Your order will be formatted and routed straight to DesiHut on WhatsApp (<strong>03143666277</strong>).
+                    </p>
+
+                    <div class="form-group">
+                        <label for="orderCustomerName">Your Name *</label>
+                        <input type="text" id="orderCustomerName" required placeholder="e.g. Ali Ahmed">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderCustomerPhone">Phone Number *</label>
+                        <input type="tel" id="orderCustomerPhone" required placeholder="03xx-xxxxxxx">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderOrderType">Order Type *</label>
+                        <select id="orderOrderType">
+                            <option value="Delivery">Home Delivery (Latifabad & Nearby Hyderabad)</option>
+                            <option value="Takeaway / Pickup">Self Pickup at Auto Bahn Branch</option>
+                            <option value="Dine-in">Table Reservation / Dine-in</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderAddress">Delivery Address / Notes *</label>
+                        <textarea id="orderAddress" rows="3" required placeholder="House/Flat No, Street, Sector/Unit in Hyderabad..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderSpecialNotes">Special Instructions (Optional)</label>
+                        <input type="text" id="orderSpecialNotes" placeholder="e.g. Extra imli chutney, less spicy, extra raita">
+                    </div>
+
+                    <div style="background:#f8fafc; padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.25rem; border:1px solid var(--border);">
+                        <div style="display:flex; justify-content:space-between; font-weight:700; font-size:1.05rem;">
+                            <span>Total Payable:</span>
+                            <span style="color:var(--primary);" id="modalTotalAmount">Rs. 0</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-checkout" style="margin-top:0;">
+                        <i class="fa-brands fa-whatsapp"></i> Send Order to WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Buttons for quick call & WhatsApp -->
+    <div class="floating-actions">
+        <a href="https://wa.me/923143666277?text=Hi%20DesiHut,%20I%20want%20to%20order" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:03143666277" class="fab fab-call" title="Call DesiHut">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
